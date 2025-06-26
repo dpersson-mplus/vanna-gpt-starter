@@ -1,0 +1,43 @@
+openapi: 3.1.0
+info:
+  title: Vanna Query Action
+  version: '1.0'
+paths:
+  /query_vanna:
+    post:
+      operationId: queryVanna
+      summary: Send a query to Vanna AI
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  description: The user's natural language query
+                user_email:
+                  type: string
+                  description: Email of the user making the request
+                agent_id:
+                  type: string
+                  description: Vanna agent ID to use
+              required:
+                - message
+                - user_email
+                - agent_id
+      responses:
+        '200':
+          description: Vanna response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  type:
+                    type: string
+                  text:
+                    type: string
+servers:
+  - url: https://your-cloudrun-or-railway-url-here
