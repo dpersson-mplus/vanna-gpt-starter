@@ -2,6 +2,10 @@
 
 This starter kit lets you run Vanna AI through your own Custom GPT by deploying a lightweight backend that forwards requests to the Vanna API.
 
+## 🎥 Demo: Vanna Custom GPT in Action
+
+[![Watch the demo](https://img.youtube.com/vi/99SeFvRPs98/0.jpg)](https://www.youtube.com/watch?v=99SeFvRPs98)
+
 ---
 
 ## 🌟 What’s Inside
