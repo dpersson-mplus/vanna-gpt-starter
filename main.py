@@ -5,7 +5,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/", methods=["POST"])
+@app.route("/query_vanna", methods=["POST"])
 def query_vanna():
     request_json = request.get_json(silent=True)
 

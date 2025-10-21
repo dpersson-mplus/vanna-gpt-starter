@@ -40,4 +40,4 @@ paths:
                   text:
                     type: string
 servers:
-  - url: https://your-cloudrun-or-railway-url-here
+  - url: https://web-production-ceb2f.up.railway.app
